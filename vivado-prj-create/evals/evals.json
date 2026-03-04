@@ -1,0 +1,35 @@
+{
+  "skill_name": "vivado-project",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to create a new Vivado project for my Artix-7 FPGA. Can you help me generate a TCL script? My Vivado is installed at C:/Xilinx/Vivado/2023.2 and I'm using xc7a35tcpg236-1 device with Verilog.",
+      "expected_output": "The skill MUST use AskUserQuestion to prompt for Vivado installation path first, then ask for FPGA device selection. After collecting all required info, generate a TCL script that creates a Vivado project with the specified device (xc7a35tcpg236-1), Vivado path (C:/Xilinx/Vivado/2023.2), and Verilog as the target language. The script should be saved to a .tcl file.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我创建一个Vivado项目的TCL脚本，使用Zynq-7000系列FPGA，器件型号是xc7z020clg484-1，项目名称叫fpga_design，使用VHDL语言。Vivado安装在D:/Xilinx/Vivado/2024.1",
+      "expected_output": "The skill MUST use AskUserQuestion to prompt for Vivado installation path and FPGA device selection before proceeding. Then generate a TCL script for creating a Vivado project named 'fpga_design' with device xc7z020clg484-1, VHDL as target language, and Vivado path D:/Xilinx/Vivado/2024.1.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want to set up a Xilinx FPGA project automation. I'm targeting a Kintex-7 device (xc7k70tfbg484-1) and will write in Verilog. Where should I install Vivado and what TCL script do I need?",
+      "expected_output": "The skill MUST use AskUserQuestion to prompt for Vivado installation path first, then ask for FPGA device selection (with options including xc7k70tfbg484-1), ask for project name, and target language. Then generate a TCL script for the specified device and language.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "创建一个Vivado工程",
+      "expected_output": "The skill MUST use AskUserQuestion to prompt for: 1) Vivado installation path (with common options like C:/Xilinx/Vivado/2023.2, C:/Xilinx/Vivado/2024.1, etc.), 2) FPGA device selection (with comprehensive list of common devices), 3) Project name, 4) Target language (Verilog/VHDL). After collecting all info, generate and save a TCL script.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I need help with a Vivado TCL script for my FPGA project",
+      "expected_output": "The skill MUST use AskUserQuestion to prompt for: 1) Vivado installation path (with common options), 2) FPGA device selection, 3) Project name, 4) Target language. Then generate a complete TCL script for creating the Vivado project.",
+      "files": []
+    }
+  ]
+}
